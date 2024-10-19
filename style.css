@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F5; /* Neutral background color */
+  color: #333; /* Dark gray text color */
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/Grey\ Modern\ Professional\ Business\ Project\ Presentation.png);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: #333; /* Dark gray background color */
+  color: #fff; /* White text color */
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 1rem;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+header nav ul li a {
+  color: #fff; /* White text color */
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #ccc; /* Light gray text color on hover */
+}
+
+::content {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #333; /* Dark gray text color */
+  text-decoration: wavy;
+  font-size: 19px;
+  background-color: #2E86C1; /* Blue-green background color */
+  border-radius: 15px;
+  box-shadow: 6px 6px 1px #e5ac03;
+  padding: 0%;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #0d1d0c;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 50%;
+  font-size: 60%;
+}
+
+.header-text h1 span {
+  color: black;
+}
+
+/*---------about---------*/
+#about {
+  padding: 80px 0;
+  color: black;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  background: #2E86C1; /* Blue-green background color */
+  border-radius: 50px;
+  box-shadow: -50px -50px 100px #184766, 50px 50px 100px #44c5ff;
+}
+
+.about-col-1 {
+  flex: 1;
+  padding: 20px;
+  border-radius: 50px;
+  background: #2E86C1; /* Blue-green background color */
+  box-shadow: -50px -50px 100px #184766, 50px 50px 100px #44c5ff;
+}
+
+.about-col-2 {
+  flex: 1;
+  padding: 20px;
+}
+
+#experience {
+  padding: 20px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  background: #2E86C1; /* Blue-green background color */
+}
+  
+  .experience-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: linear-gradient(#d4af37,#d4af37);
+    border-radius: 50px;
+    background:#d4af37 ;
+    box-shadow:  -50px -50px 100px #184766,
+                 50px 50px 100px #44c5ff;
+   
+  }
+.experience-container.experience-item h4 p{
+    font-size: 20px; 
+    border-top: 3px #000000 solid;
+    border-right: 5px #000000 solid;
+    border-bottom: 5px #000000 solid;
+    border-left: 5px #000000 solid;
+} 
+
+.profile-picture {
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: fit-content;
+  }
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+  .certificate-container.profile-picture {
+    width: 200px; /* Adjust the width and height as needed */
+    height: 150px;
+    border-radius: 90%; /* Makes the image round */
+    overflow: hidden; /* Clips the image to the rounded shape */
+  }
+  
+  .profile-picture img {
+    background: #2E86C1;
+    box-shadow:  -50px -50px 100px #184766, 50px 50px 100px #44c5ff;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .experience-container profile-picture img {
+    width: 100%;
+    height: auto;
+    border: 6px solid #808080;
+    padding: 5px;
+    margin: 5px;
+  }
+  .experience-container.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    padding-right: 80px;
+    margin-right: 60px;
+  }
+  #certificates {
+    padding: 20px;
+  }
+  
+  .certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: linear-gradient(#2E86C1, #2E86C1);
+    border-radius: 50px;
+    background:#2E86C1 ;
+    box-shadow:  -50px -50px 100px #184766,
+                 50px 50px 100px #44c5ff;
+  }
+  
+  .certificate-link {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .certificate-link img {
+    width: 100%;
+    height: auto;
+  }
+  #hobbies {
+    padding: 20px;
+  }
+  
+  .hobbies-list {
+    list-style: none;
+    padding: 0;
+    background: linear-gradient(#d4af37 , #d4af37);
+    border-radius: 50px;
+    background:#d4af37 ;
+    box-shadow:  -50px -50px 100px #184766,
+                 50px 50px 100px #44c5ff;
+  }
+  
+  .hobbies-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  #socials-contact {
+    padding: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #2E86C1, #2E86C1); /* Orange to pink gradient for the sky */
+    background: linear-gradient(to right, #2E86C1, #2E86C1); /* Steel Blue to Teal gradient for the waves */
+ background: linear-gradient(to left,#FF5F15);
+  }
+  .social-link {
+    margin-bottom: 20px;
+  }
+  
+  .social-link a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  .social-links image.small-round{
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 10px; /* Adds space between the images */
+  }
+  
+  .hobbies-list img {
+    max-width: 150px; /* Adjust the size of the QR code as needed */
+  }
+  .images {
+    display: flex;
+    align-items: center;
+  }
+
+   /* Frame for each picture */
+.small-round {
+    border: 6px solid #FF5F15;
+    padding: 5px;
+    margin: 5px;
+  }
+/* Align the pictures horizontally */
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background:#2E86C1;
+    box-shadow:  -50px -50px 100px #184766,
+                 50px 50px 100px #44c5ff;
+  }
+  body {
+    font-family: 'YourVintageFont', sans-serif;
+}
+#contact {
+  padding: 20px;
+  background: linear-gradient(#d4af37, #d4af37);
+  margin-top: 20px;
+  border-radius: 50px;
+  background:#d4af37 ;
+  box-shadow:  -50px -50px 100px #184766,
+               50px 50px 100px #44c5ff;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+#contact-form input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #FF5F15;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover{
+    background-color: #808080;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px; /* Increased font size for a more stylish look */
+  font-weight: bold;
+  color: #2E86C1;
+  text-shadow: 2px 2px 4px rgba(103, 40, 40, 0.2); /* Added text shadow for depth */
+}
+
+.logo .y-element {
+  position: relative;
+  top: 2px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2E86C1;
+  transform: rotate(45deg);
+  font-size: 36px; /* Adjusted font size to fit the circle */
+  color: #110808; /* Changed text color to white */
+  text-align: center; /* Centered the text horizontally */
+  line-height: 40px; /* Centered the text vertically */
+  font-weight: bold; /* Added font weight to make the letter more prominent */
+}
+
+.logo .z-element {
+  position: relative;
+  top: -2px;
+  left: -4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFC107;
+  transform: rotate(-45deg);
+  font-size: 36px; /* Adjusted font size to fit the circle */
+  text-align: center; /* Centered the text horizontally */
+  line-height: 40px; /* Centered the text vertically */
+  font-weight: bold; /* Added font weight to make the letter more prominent */
+  color: #000;
+}
+
+#certificates-display {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  flex-wrap: wrap;
+  border-radius: 2%;
+  background-color: #0d1d0c;
+  box-shadow:  -50px -50px 100px #184766,
+               50px 50px 100px #44c5ff;
+}
+.title {
+  font-size: 3em; /* Make the font size larger */
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space between title and images */
+  color: #d4af37; /* Change color for better visibility */
+  font-family: 'Times New Roman', Times, serif; /* Change font family for style */
+  text-transform: uppercase; /* Make the text uppercase for style */
+  border:2px solid;
+  border-radius: 8px;
+  background-color: #000000;
+}
+.picture-grid {
+  display: flex; /* Use flexbox to arrange items in a row */
+  justify-content: center;
+  width: 100%;
+}
+.picture-item{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.picture-item img {
+  margin: 10px; /* Add some space between images */
+  height: auto; /* Maintain aspect ratio */
+  width:350px;
+  border-radius: 70px;
+  background-color: #FF5F15;
+  transform: rotate(45);
+}
